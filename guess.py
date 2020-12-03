@@ -19,7 +19,7 @@ done = False
 
 # Keep getting names unitl done
 while done == False:
-    oName = input("Enter any other name. Leave empty when done: \n")
+    oName = input("Enter any other string like Date of birth and press enter/return. Leave empty when done: \n")
     if oName != "":
         names.append(oName)
     else:
@@ -30,6 +30,8 @@ save = input("Enter 's' to show the passwords or complete path to append them to
 if save == "s":
     for i in range(len(names)):
         print(names[i] + "1234")
+        print(names[i] + "12345")
+        print(names[i] + "123456")
 else:
     with open(save, 'a') as outF:
         # outF.write(names)
