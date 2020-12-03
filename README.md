@@ -1,6 +1,6 @@
 # PersonalPasswordGuesser
 
-This script will guess passswords based on the victim.
+This script will guess passwords based on personal info of the victim.
 
 ## Usage
 - Run `python3 guess.py`
