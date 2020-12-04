@@ -13,7 +13,7 @@ MADE BY: _ _          _   _____                        _
 fName = input("Enter target's first name:\n")
 lName = input("Enter target's last name:\n")
 mName = input("Enter target's middle/nickname:\n")
-names = ["\n", fName, lName, mName]
+names = [fName, lName, mName]
 
 done = False
 
@@ -28,25 +28,27 @@ while done == False:
 save = input("Enter 's' to show the passwords or complete path to append them to an existing file: ")
 
 if save == "s":
+    # TODO add first letter caps functionality
     for i in range(len(names)):
+        print(names[i] + "12")
+        print(names[i] + "123")
         print(names[i] + "1234")
         print(names[i] + "12345")
         print(names[i] + "123456")
+        print(names[i] + "@12")
+        print(names[i] + "@123")
+        print(names[i] + "@1234")
+        print(names[i] + "@12345")
+        print(names[i] + "@123456")
+        print(fName + lName)
+        print(lName + fName)
+        print(lName + " " +fName)
+        print(lName + "_" +fName)
+
 else:
     with open(save, 'a') as outF:
-        # outF.write(names)
 
-        # for line in names:
-        #     # write line to output file
-        #     outF.write(line)
-        #     outF.write("\n")
-        #     outF.close()
-
-        # Python program to convert a list 
-# to string using list comprehension 
-
-        # using list comprehension 
+        # Using list comprehension 
         listToStr = '\n'.join([str(elem) for elem in names]) 
-        # print(listToStr) 
         outF.write(listToStr)
 
